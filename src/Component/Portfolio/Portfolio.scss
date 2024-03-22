@@ -1,0 +1,104 @@
+@import "../../App.scss";
+
+.portfolio {
+    position: relative;
+}
+
+.progress {
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding-top: 50px;
+    text-align: center;
+    color: orange;
+    font-size: 36px;
+}
+
+.progress-bar {
+    height: 10px;
+    background: linear-gradient(80deg, rgba(4, 246, 129, 0.794), rgba(205, 29, 244, 0.746)) !important;
+
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.wrapp {
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    overflow: hidden;
+}
+
+.img-container {
+    flex: 1;
+    height: 50%;
+}
+
+.container img {
+    height: 100%;
+    width: 100%;
+    box-shadow: 1px 1px 5px 1px rgb(4, 163, 158);
+    animation: animeee 1s infinite alternate;
+
+    @keyframes animeee {
+        100% {
+            box-shadow: 1px 1px 5px 1px rgba(205, 29, 244, 0.731);
+        }
+    }
+}
+
+.textt-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.textt-container h2 {
+    font-size: 72px;
+    -webkit-background-clip: text;
+    color: transparent;
+    background: linear-gradient(to left, rgb(4, 246, 129), rgb(205, 29, 244));
+    background-clip: text;
+    text-shadow: 0px 0px 10px rgba(4, 246, 129, 0.672);
+    animation: anime 1s infinite alternate;
+
+    @keyframes anime {
+        50% {
+            text-shadow: 0px 0px 10px rgb(24, 179, 81);
+        }
+
+        100% {
+            text-shadow: 0px 0px 10px rgba(205, 29, 244, 0.731);
+        }
+    }
+
+}
+
+.textt-container p {
+    color: gray;
+    font-size: 20px;
+}
+
+.textt-container button {
+    background-color: orange;
+    border: none;
+    padding: 10px;
+    width: 180px;
+    font-size: 20px;
+    font-weight: 700;
+    //    border-radius: 10px;
+    cursor: pointer;
+    //  border: 1px solid rgba(red, green, blue);
+}

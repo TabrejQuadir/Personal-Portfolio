@@ -1,0 +1,43 @@
+@import "../../App.scss";
+
+
+.navbar{
+    height: 100px;
+    /* background-color: #20a1c1a3; */
+    background: linear-gradient(90deg, rgba(204, 165, 10, 0.794),rgba(255, 0, 0, 0.746)) !important;
+
+}
+
+.navbar .wrapper{
+    height: 100%;
+    /* background-color: #a15a5a; */
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include mobile{
+        justify-content:flex-end;
+        padding: 20px;
+    }
+}
+
+.wrapper span{
+    font-weight: bold;
+
+    @include mobile{
+        display: none;
+    }
+}
+
+.social{
+    display: flex;
+    gap: 30px;
+}
+
+.social img{
+    height: 30px;
+    width: 30px;
+}
+
